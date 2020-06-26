@@ -2,7 +2,7 @@
 
 <p align="center">
 
-<img src="https://github.com/SynchronousTeam/mta-resource-init/tree/master/demo/image/Image_Resource_Init.png">
+<img src="https://github.com/SynchronousTeam/mta-resource-init/blob/master/demo/image/Image_Resource_Init.png">
 
 <br>
 
@@ -47,13 +47,12 @@ This resource is not ready yet, we are working on it, if you want to see our adv
 
 - [**GitHub**](https://github.com/MrPixxa-games)
 
-## Support 
+## Support
 
-We do our best on every single app, if you want to learn with us and then **Support us** you can check out the links below. 
+We do our best on every single app, if you want to learn with us and then **Support us** you can check out the links below.
 
 - [**FaceBook**](https://www.facebook.com/SynchronousTeam)
 - [**Donations**](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5LY2Y46Q7DSWL&source=url)
-
 
 ## License & Copyright
 
