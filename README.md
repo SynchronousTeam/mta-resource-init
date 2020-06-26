@@ -15,11 +15,17 @@
  <a href="https://www.facebook.com/SynchronousTeam"style="text-decoration: none">
 <img src="https://img.shields.io/badge/Synchronous-facebook-blue">
 </a>
+<a href="https://github.com/SynchronousTeam/mta-resource-init"style="text-decoration: none">
+<img src="https://img.shields.io/github/repo-size/SynchronousTeam/mta-resource-init">
+</a>
+<a href="https://github.com/SynchronousTeam/mta-resource-init"style="text-decoration: none">
+<img src="https://img.shields.io/github/license/SynchronousTeam/mta-resource-init">
+</a>
 </p>
 
 ---
 
-**MTA Resource Init** is an Open-Source GUI/Lua Connection for a Multi Theft Auto server developed on **_HTML, CSS, JavaScript_ and _Lua_**. The principal function for this resource is show the Initial MTA Game Server Screen where you can Login, Create an account and See your profile stats, all this stuff running on **Montgomery Country RP** a MTA Server developed by **Kyonax, Pixxa and Thrizz**.
+**MTA Resource Init** is an Open-Source GUI/Lua Connection for a Multi Theft Auto server developed on **_HTML, CSS, JavaScript_ and _Lua_**. The principal function for this resource is show the Initial MTA Game Server Screen where you can Login, Create an account and See your profile stats, all this stuff running on **Montgomery Country RP** a MTA Server developed by **Kyonax, Pixxa and Thrizz members of Synchronous**.
 
 This resource is still on develop so many code lines are going to disappear, at the moment only the **Login** is finished.
 
