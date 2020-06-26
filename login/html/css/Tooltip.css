@@ -1,0 +1,106 @@
+/*
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+---|                                                                               |---
+---|              CSS-Code by "Pixxa & Kyonax" Synchronous members                 |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|                       code CSS from Montgomery Country RP                     |---
+---|                               Resource-CSS: [init]                            |---
+---|                               Name-CSS: [Tooltip]                             |---
+---|             Function-CSS: Create the base to some Tooltips messages           |---
+---|                                                                               |---
+---|                            DEV-DATE: 23/06/2020                               |---
+---|                                number: 009                                    |---
+---|                                                                               |---
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+*/
+.error {
+  position: absolute;
+  top: 43.8%;
+  left: 58%;
+  padding: 0.5% 3.1%;
+  border-radius: 3px;
+  background-color: #fdcac4;
+  color: #ed6160;
+  font-size: 13px;
+  display: none;
+} /*Create the base to the Error Tooltip*/
+
+.error::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+
+  border-right: 9px solid #fdcac4;
+  position: absolute;
+  left: -2%;
+} /*Add a triangle for the Error Tooltip*/
+
+.error:nth-child(2) {
+  top: 90%;
+  left: 44.8%;
+  background-color: #d8fdc4;
+  color: #77d2a2;
+  font-size: 13px;
+  display: none;
+} /*Create the base to the Succes Tooltip*/
+
+.error:nth-child(2)::before {
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+
+  border-right: 0px solid #d8fdc4;
+} /*Hide a posible Triangle for this Tooltip*/
+
+.error:nth-child(3) {
+  padding: 0.5% 2.8%;
+  top: 80%;
+  left: 44.8%;
+  background-color: #ffe085;
+  color: #e3be53;
+  font-size: 13px;
+  display: none;
+} /*Create the base to the Warning Tooltip*/
+
+.error:nth-child(3)::before {
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+
+  border-right: 0px solid #ffe085;
+} /*Hide a posible Triangle for this Tooltip*/
+
+.error:nth-child(4) {
+  padding: 0.5% 3.5%;
+  top: 85%;
+  left: 44.8%;
+  background-color: #c4d0fd;
+  color: #7791d2;
+  font-size: 13px;
+  display: none;
+} /*Create the base to the Information Tooltip*/
+
+.error:nth-child(4)::before {
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+
+  border-right: 0px solid #c4d0fd;
+} /*Hide a posible Triangle for this Tooltip*/
+
+.error:nth-child(5) {
+  padding: 0.5% 2.4%;
+  top: 75%;
+  left: 44.8%;
+  background-color: #fdcac4;
+  color: #ed6160;
+  font-size: 13px;
+  display: none;
+} /*Create the base to the Error Tooltip*/
+
+.error:nth-child(5)::before {
+  border-top: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+
+  border-right: 0px solid #fdcac4;
+} /*Hide a posible Triangle for this Tooltip*/

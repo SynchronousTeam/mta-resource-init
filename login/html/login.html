@@ -1,0 +1,128 @@
+<!--  
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+---|                                                                               |---
+---|             HTML-Code by "Pixxa & Kyonax" Synchronous members                 |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|                      code HTML from Montgomery Country RP                     |---
+---|                              Resource-HTML: [init]                            |---
+---|                               Name-HTML: [login]                              |---
+---|          Function-HTML: GUI support for the server MTA Montgomery RP          |---
+---|                                                                               |---
+---|                            DEV-DATE: 21/06/2020                               |---
+---|                                number: 001                                    |---
+---|                                                                               |---
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!--CSS Files-->
+    <link rel="stylesheet" href="css/Body.css">
+    <link rel="stylesheet" href="css/Button.css">
+    <link rel="stylesheet" href="css/Form.css">
+    <link rel="stylesheet" href="css/FX.css">
+    <link rel="stylesheet" href="css/Init-Animation.css">
+    <link rel="stylesheet" href="css/Input.css">
+    <link rel="stylesheet" href="css/Label.css">
+    <link rel="stylesheet" href="css/Responsive.css">
+    <link rel="stylesheet" href="css/Tooltip.css">
+    <link rel="stylesheet" href="http://mta/[init]/login/html/css/Titillium-Web.css">
+    <!--JS Files-->
+    <script type="text/javascript" src="./js/Button.js"></script>
+    <script type="text/javascript" src="./js/Init-Animation.js"></script>
+    <script type="text/javascript" src="./js/Validate.js"></script>
+</head>
+
+
+<body>
+    <label for="Tooltips" class="error" id="error">Tooltip Error</label>
+    <label for="Tooltips" class="error">Tooltip Succes</label>
+    <label for="Tooltips" class="error">Tooltip Warning</label>
+    <label for="Tooltips" class="error">Tooltip Info</label>
+    <label for="Tooltips" class="error">Tooltip Error-label</label>
+    <main>
+        <section>
+            <form action="" onsubmit="return validateForm()" method="POST">
+                <div class="image-logo" id="image-logo"><img class="image-logo" id="image-logo"
+                        src="images/Image_Logo_Montgomery.png" alt=""></div>
+                <fieldset id="panel-login">
+                    <table>
+                        <tr>
+                            <td align="center">
+                                <div class="form__group field" id="input-user">
+                                    <input type="input" class="form__field" placeholder="Usuario" name="user"
+                                        id='user' />
+                                    <label for="name" class="form__label">Usuario</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <div class="form__group field" id="input-password">
+                                    <input type="password" class="form__field" placeholder="Contraseña" name="password"
+                                        id='password' maxlength="20" />
+                                    <label for="name" class="form__label">Contraseña</label>
+                                    <span class="button-eye" onclick="eyeButton()">
+                                        <i id="unhide-password" class="button-eye"><img class="button-eye"
+                                                src="./images/Image_Unhide_Eye.png"></i>
+                                        <i id="hide-password" class="button-eye"><img class="button-eye"
+                                                src="./images/Image_Hide_Eye.png"></i>
+                                    </span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <div class="button-triangle" id="button-triangle">
+                                </center>
+                                <center>
+                                    <div class="button-triangle-background" id="button-rounded"></div>
+                                </center>
+                                <center><input type="submit" title="Iniciar Sesión" class="button-input-submit"
+                                        id="button-input-submit" onmouseout="mouseOut()" onmouseover="mouseOver()">
+                                </center>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center><a href="" onclick="return false" class="link-register" id="link-register">CREAR
+                                        CUENTA</a>
+                                </center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="label-version">VERSIÓN 1.0 BETA</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <p class="label-synchronous-members">KYONAX • THRIZZ • PIXXA • CLEVERSEA • FIREHOME - PILARES SYNKS</p>
+    <p class="label-copyright">© 2020 SYNCHRONOUS ENTERTAINMENT. TODOS LOS DERECHOS RESERVADOS.</p>
+    <div class="effect-particles">
+        <ul class="particles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+</body>
+</div>
+
+</html>

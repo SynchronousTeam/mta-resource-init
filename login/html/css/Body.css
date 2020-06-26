@@ -1,0 +1,31 @@
+/*
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+---|                                                                               |---
+---|              CSS-Code by "Pixxa & Kyonax" Synchronous members                 |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|                       code CSS from Montgomery Country RP                     |---
+---|                               Resource-CSS: [init]                            |---
+---|                                 Name-CSS: [Body]                              |---
+---|                  Function-CSS: Give the style to the Body page                |---
+---|                                                                               |---
+---|                            DEV-DATE: 23/06/2020                               |---
+---|                                number: 005                                    |---
+---|                                                                               |---
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+*/
+body {
+  font-family: "Titillium Web", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  font-size: 1.5rem;
+
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+} /*Style and properties to the Body page*/

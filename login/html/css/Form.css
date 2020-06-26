@@ -1,0 +1,45 @@
+/*
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+---|                                                                               |---
+---|              CSS-Code by "Pixxa & Kyonax" Synchronous members                 |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|                       code CSS from Montgomery Country RP                     |---
+---|                               Resource-CSS: [init]                            |---
+---|                                 Name-CSS: [Form]                              |---
+---|                 Function-CSS: Give the style to the Login Form                |---
+---|                                                                               |---
+---|                            DEV-DATE: 23/06/2020                               |---
+---|                                number: 004                                    |---
+---|                                                                               |---
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+*/
+section {
+  margin-top: -25%;
+} /*Tanslate 25% down the Login Form*/
+
+table {
+  width: 440px;
+} /*Give the Width*/
+
+td {
+  padding: 10px;
+} /*Give the space between the Elements inside*/
+
+fieldset {
+  padding: 20px;
+  background: #2a2a2c;
+  border: 0px;
+  width: 420px;
+  height: 500px;
+  margin: 0 auto;
+  box-shadow: 0px 8px #f5de1d, 0px 0px 8px #1f1f20;
+} /*Give the Style for the Principal Container*/
+
+.image-logo {
+  display: block;
+  margin: auto;
+  width: 300px;
+  position: relative;
+  top: 60px;
+} /*Give important properties to the Logo Image on the Form*/

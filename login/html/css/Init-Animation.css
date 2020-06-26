@@ -1,0 +1,62 @@
+/*
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+---|                                                                               |---
+---|              CSS-Code by "Pixxa & Kyonax" Synchronous members                 |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|                       code CSS from Montgomery Country RP                     |---
+---|                               Resource-CSS: [init]                            |---
+---|                            Name-CSS: [Init-Animation]                         |---
+---|        Function-CSS: Execute the initial animation Login Form Animation       |---
+---|                                                                               |---
+---|                            DEV-DATE: 21/06/2020                               |---
+---|                                number: 001                                    |---
+---|                                                                               |---
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+*/
+.image-logo-animation {
+  z-index: 1;
+  animation: image_logo 6s linear;
+} /*Sets to the class the init of an Animation*/
+
+.panel-login-animation {
+  animation: panel_login 6s linear;
+} /*Sets to the class the init of an Animation*/
+
+@keyframes panel_login {
+  0% {
+    opacity: 0%;
+  }
+  90% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+} /*Make a Opacity Transition by percents*/
+
+@keyframes image_logo {
+  0% {
+    opacity: 0%;
+    top: 300px;
+  }
+  30% {
+    opacity: 100%;
+  }
+  60% {
+    opacity: 100%;
+  }
+  70% {
+    opacity: 0%;
+  }
+  80% {
+    top: 300px;
+  }
+  90% {
+    opacity: 0%;
+    top: 60px;
+  }
+  100% {
+    opacity: 100%;
+  }
+} /*Make a Opacity Transition by percents*/

@@ -1,0 +1,94 @@
+/*
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+---|                                                                               |---
+---|              CSS-Code by "Pixxa & Kyonax" Synchronous members                 |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|                       code CSS from Montgomery Country RP                     |---
+---|                               Resource-CSS: [init]                            |---
+---|                              Name-CSS: [Responsive]                           |---
+---|         Function-CSS: Does changes about the size on a 1366px Screen          |---
+---|                                                                               |---
+---|                            DEV-DATE: 23/06/2020                               |---
+---|                                number: 008                                    |---
+---|                                                                               |---
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+*/
+@media (max-width: 1366px) {
+  /*Change all the sizes for a 1366px Screen*/
+  table {
+    width: 340px;
+    height: 400px;
+  }
+  section {
+    margin-top: -35%;
+  }
+  #panel-login {
+    width: 340px;
+    height: 400px;
+  }
+  #input-user {
+    top: 100px;
+  }
+  #input-password {
+    top: 105px;
+  }
+  .button-input-submit {
+    top: 75px;
+  }
+  .image-logo {
+    width: 200px;
+    margin-top: 0px;
+    top: 40px;
+  }
+  .button-triangle-background {
+    top: 130px;
+  }
+  .button-triangle {
+    top: 162px;
+  }
+  .label-version {
+    bottom: -60px;
+    font-size: 10px;
+  }
+  .link-register {
+    font-size: 15px;
+    bottom: -55px;
+  }
+  .form__group {
+    padding: 15px 0 0;
+    margin-top: -5px;
+  }
+  .form__field {
+    font-size: 0.8rem;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1rem;
+  }
+  /*Fix some bugs animations for the Resolution*/
+  @keyframes image_logo {
+    0% {
+      opacity: 0%;
+      top: 200px;
+    }
+    10% {
+      opacity: 100%;
+    }
+    60% {
+      opacity: 100%;
+    }
+    70% {
+      opacity: 0%;
+    }
+    80% {
+      top: 300px;
+    }
+    90% {
+      opacity: 0%;
+      top: 40px;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }
+}

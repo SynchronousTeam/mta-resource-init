@@ -1,0 +1,39 @@
+/*
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+---|                                                                               |---
+---|              CSS-Code by "Pixxa & Kyonax" Synchronous members                 |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|                       code CSS from Montgomery Country RP                     |---
+---|                               Resource-CSS: [init]                            |---
+---|                                Name-CSS: [Label]                              |---
+---|      Function-CSS: Gives the styles of the messages and information Labels    |---
+---|                                                                               |---
+---|                            DEV-DATE: 23/06/2020                               |---
+---|                                number: 002                                    |---
+---|                                                                               |---
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+*/
+.label-copyright {
+  font-size: 10px;
+  color: #656565;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+} /*Give the Style for the Copyright message on a Label (<p>)*/
+
+.label-synchronous-members {
+  font-size: 12px;
+  color: #8b8b8b;
+  position: absolute;
+  left: 30px;
+  bottom: 40px;
+} /*Give the Style for the Members of Synchronous message on a Label (<p>)*/
+
+.label-version {
+  font-size: 12px;
+  color: #a1a1a1;
+  position: relative;
+  bottom: -115px;
+  right: 30px;
+} /*Give the Style for the MTA Versión Server message on a Label (<p>)*/
