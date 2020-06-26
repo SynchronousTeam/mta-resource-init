@@ -1,11 +1,8 @@
 # Resource Init
 
 <p align="center">
-
 <img src="https://github.com/SynchronousTeam/mta-resource-init/blob/master/demo/image/Image_Resource_Init.png">
-
 <br>
-
 <a href="https://github.com/SynchronousTeam/mta-resource-init"style="text-decoration: none">
 <img src="https://img.shields.io/github/languages/count/SynchronousTeam/mta-resource-init">
 </a>
@@ -18,7 +15,6 @@
  <a href="https://www.facebook.com/SynchronousTeam"style="text-decoration: none">
 <img src="https://img.shields.io/badge/Synchronous-facebook-blue">
 </a>
-
 </p>
 
 ---
