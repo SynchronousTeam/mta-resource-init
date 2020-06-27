@@ -34,6 +34,22 @@
         <right name="function.addAccount" acces="true"></right>
     </aclrequest>
     <!--END LOGIN-->
+    <!--BASE-->
+    <!--Scripts Base GUI Connection-->
+    <script src="base/BaseBrowser.lua" type="client"></script>
+    <!--Import of HTML, CSS and JS Files-->
+    <file src="base/html/base.html"></file>
+    <!--CSS-->
+    <file src="base/html/css/Background.css"></file>
+    <file src="base/html/css/Body.css"></file>
+    <file src="base/html/css/FX.css"></file>
+    <file src="base/html/css/Tooltip.css"></file>
+    <!--Import de Fuentes externas con su respectivo CSS-->
+    <file src="base/html/css/Titillium-Web.css"></file>
+    <file src="base/html/fonts/TitilliumWeb-Bold.ttf"></file>
+    <!--Video necesarias para el Base html - Botón y Background-->
+    <file src="base/html/video/Video_Background.mp4"></file>
+    <!--END BASE-->
     <!--REGISTER-->
 
     <!--END REGISTER-->

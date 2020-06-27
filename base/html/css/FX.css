@@ -1,0 +1,126 @@
+/*
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+---|                                                                               |---
+---|              CSS-Code by "Pixxa & Kyonax" Synchronous Developers              |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|  Github: https://github.com/MrPixxa-games • G-Mail: pixxaunited@gmail.com     |---
+---|                       code CSS from Montgomery Country RP                     |---
+---|                               Resource-CSS: [init]                            |---
+---|                                  Name-CSS: [FX]                               |---
+---|                    Function-CSS: Put nice effects on the Page                 |---
+---|                                                                               |---
+---|                            DEV-DATE: 26/06/2020                               |---
+---|                                number: 003                                    |---
+---|                                MIT License                                    |---
+---|                                                                               |---
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+*/
+.effect-particles {    
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+  } /*Create the canvas and puts the Background on it*/
+  
+  .particles {
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 97%;
+    height: 100%;
+    overflow: hidden;
+  } /*Create the space where the particles are going to apper*/
+  
+  /*The effect for each particle*/
+  .particles li {
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(241, 199, 9, 0.6);
+    animation: particles 20s linear infinite;
+    bottom: -150px;
+  }
+  
+  .particles li:nth-child(1) {
+    left: 86%;
+    width: 22px;
+    height: 22px;
+    animation-delay: 0s;
+  }
+  
+  .particles li:nth-child(2) {
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+  }
+  
+  .particles li:nth-child(3) {
+    left: 70%;
+    width: 9px;
+    height: 9px;
+    animation-delay: 5.5s;
+  }
+  
+  .particles li:nth-child(4) {
+    left: 42%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+  }
+  
+  .particles li:nth-child(5) {
+    left: 65%;
+    width: 12px;
+    height: 12px;
+    animation-delay: 0s;
+  }
+  
+  .particles li:nth-child(6) {
+    left: 15%;
+    width: 18px;
+    height: 18px;
+    animation-delay: 3.5s;
+  }
+  
+  .particles li:nth-child(7) {
+    left: 30%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 2.5s;
+  }
+  
+  .particles li:nth-child(8) {
+    left: 60%;
+    width: 6px;
+    height: 6px;
+    animation-delay: 6s;
+    animation-duration: 20s;
+  }
+  
+  .particles li:nth-child(9) {
+    left: 24%;
+    width: 3px;
+    height: 3px;
+    animation-delay: 6.5s;
+  }
+  
+  @keyframes particles {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-800px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  

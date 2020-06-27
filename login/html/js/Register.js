@@ -15,6 +15,7 @@
 ---|                                                                               |---
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•--- 
  */
-function callRegister(){
-
+function callRegister() {
+  mta.triggerEvent("login-browser:remove");
+  mta.triggerEvent("base-browser:show");
 } //When the User Click on the Link Register this function Call a Lua Event
