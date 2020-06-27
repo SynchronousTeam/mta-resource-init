@@ -17,7 +17,7 @@
 ---|                                MIT License                                    |---
 ---|                                                                               |---
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
---FIXME: Misterious Calling Browser - First and Dangerous Issue
+--FIXME: Misterious Calling Browser - First and Dangerous Issue Pixxa
 
 --- Server Variables
 event = {add = addEventHandler, load = addEvent, execute = triggerServerEvent} -- Make simple calls for addEvent and triggerServerEvent by the variable event
