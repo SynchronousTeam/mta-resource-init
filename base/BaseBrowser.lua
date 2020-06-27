@@ -17,6 +17,8 @@
 ---|                                MIT License                                    |---
 ---|                                                                               |---
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+--FIXME: Misterious Calling Browser - First and Dangerous Issue
+
 --- Server Variables
 event = {add = addEventHandler, load = addEvent, execute = triggerServerEvent} -- Make simple calls for addEvent and triggerServerEvent by the variable event
 local WINDOW_WIDTH, WINDOW_HEIGHT = guiGetScreenSize() -- Get the Size from the Game Window (global)
