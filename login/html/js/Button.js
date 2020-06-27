@@ -1,9 +1,9 @@
 /**
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
 ---|                                                                               |---
----|               JS-Code by "Pixxa & Kyonax" Synchronous members                 |---
+---|               JS-Code by "Pixxa & Kyonax" Synchronous Developers              |---
 ---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
----|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|  Github: https://github.com/MrPixxa-games • G-Mail: pixxaunited@gmail.com     |---
 ---|                        code JS from Montgomery Country RP                     |---
 ---|                               Resource-JS: [init]                             |---
 ---|                                Name-JS: [Button]                              |---
@@ -11,6 +11,7 @@
 ---|                                                                               |---
 ---|                            DEV-DATE: 21/06/2020                               |---
 ---|                                number: 002                                    |---
+---|                                MIT License                                    |---
 ---|                                                                               |---
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•--- 
  */
