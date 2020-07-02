@@ -16,6 +16,6 @@
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•--- 
  */
 function callRegister() {
-  mta.triggerEvent("login-browser:remove");
-  mta.triggerEvent("base-browser:show");
+  mta.triggerEvent("base-camera:sendData");
+  return false;
 } //When the User Click on the Link Register this function Call a Lua Event

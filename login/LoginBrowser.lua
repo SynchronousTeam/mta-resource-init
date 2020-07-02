@@ -17,7 +17,7 @@
 ---|                                MIT License                                    |---
 ---|                                                                               |---
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
---- Server Variables
+--- Client Variables
 event = {add = addEventHandler, load = addEvent, execute = triggerServerEvent} -- Make simple calls for addEvent and triggerServerEvent by the variable event
 local WINDOW_WIDTH, WINDOW_HEIGHT = guiGetScreenSize() -- Get the Size from the Game Window (global)
 --- HTML Web Page Creation
@@ -67,6 +67,7 @@ event.add('login-browser:remove', root, function() deleteBrowserGUI() end) -- An
 event.load("browser-label:error", true)
 event.add("browser-label:error", root, function(error) sendError(error) end) -- An event that get a parameter and show it into the Browser GUI like an Error
 --- MTA Events
-event.add("onClientResourceStart", resourceRoot,
-          function() createBrowserGUI() end) -- When the resource [init] starts Create the Browser GUI
+event.add("onClientResourceStart", resourceRoot, function()
+    createBrowserGUI()    
+end) -- When the resource [init] starts Create the Browser GUI
 
