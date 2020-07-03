@@ -21,7 +21,7 @@
 event = {add = addEventHandler, load = addEvent, execute = triggerServerEvent} -- Make simple calls for addEvent and triggerServerEvent by the variable event
 local WINDOW_WIDTH, WINDOW_HEIGHT = guiGetScreenSize() -- Get the Size from the Game Window (global)
 --- HTML Web Page Creation
-URL_PAGE = "http://mta/[init]/login/html/login.html" -- Location of the HTML File (global)
+URL_PAGE = "http://mta/[init]/login/src/login.html" -- Location of the HTML File (global)
 local CEF = guiCreateBrowser(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, true, false,
                              false) -- Create the Browser using the Default GUI MTA interface (global)
 local BROWSER = guiGetBrowser(CEF) -- Get the Browser Object (global)

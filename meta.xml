@@ -5,30 +5,30 @@
     <script src="login/LoginBrowser.lua" type="client"></script>
     <script src="login/LoginBackend.lua" type="server"></script>
     <!--Import of HTML, CSS and JS Files-->
-    <file src="login/html/login.html"></file>
+    <file src="login/src/login.html"></file>
     <!--CSS-->
-    <file src="login/html/css/Body.css"></file>
-    <file src="login/html/css/Button.css"></file>
-    <file src="login/html/css/FX.css"></file>
-    <file src="login/html/css/Form.css"></file>
-    <file src="login/html/css/Init-Animation.css"></file>
-    <file src="login/html/css/Input.css"></file>
-    <file src="login/html/css/Label.css"></file>
-    <file src="login/html/css/Responsive.css"></file>
-    <file src="login/html/css/Tooltip.css"></file>
+    <file src="login/src/css/Body.css"></file>
+    <file src="login/src/css/Button.css"></file>
+    <file src="login/src/css/FX.css"></file>
+    <file src="login/src/css/Form.css"></file>
+    <file src="login/src/css/Init-Animation.css"></file>
+    <file src="login/src/css/Input.css"></file>
+    <file src="login/src/css/Label.css"></file>
+    <file src="login/src/css/Responsive.css"></file>
+    <file src="login/src/css/Tooltip.css"></file>
     <!--JS-->
-    <file src="login/html/js/Button.js"></file>
-    <file src="login/html/js/Init-Animation.js"></file>
-    <file src="login/html/js/Validate.js"></file>
-    <file src="login/html/js/Register.js"></file>
+    <file src="login/src/js/Button.js"></file>
+    <file src="login/src/js/Init-Animation.js"></file>
+    <file src="login/src/js/Validate.js"></file>
+    <file src="login/src/js/Register.js"></file>
     <!--Import de Fuentes externas con su respectivo CSS-->
-    <file src="login/html/css/Titillium-Web.css"></file>
-    <file src="login/html/fonts/TitilliumWeb-Bold.ttf"></file>
+    <file src="login/src/css/Titillium-Web.css"></file>
+    <file src="login/src/fonts/TitilliumWeb-Bold.ttf"></file>
     <!--Imágenes necesarias para el Login html - Botón y Background-->
-    <file src="login/html/images/Image_Background.png"></file>
-    <file src="login/html/images/Image_Hide_Eye.png"></file>
-    <file src="login/html/images/Image_Logo_Montgomery.png"></file>
-    <file src="login/html/images/Image_Unhide_Eye.png"></file>    
+    <file src="login/src/images/Image_Background.png"></file>
+    <file src="login/src/images/Image_Hide_Eye.png"></file>
+    <file src="login/src/images/Image_Logo_Montgomery.png"></file>
+    <file src="login/src/images/Image_Unhide_Eye.png"></file>    
     <!--END LOGIN-->
     <!--BASE-->
     <!--Scripts Base GUI Connection-->

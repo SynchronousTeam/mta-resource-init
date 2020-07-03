@@ -17,5 +17,6 @@
  */
 function callRegister() {
   mta.triggerEvent("base-camera:sendData");
+  mta.triggerEvent("register-browser:show");
   return false;
 } //When the User Click on the Link Register this function Call a Lua Event

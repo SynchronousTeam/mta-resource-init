@@ -1,0 +1,18 @@
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+---|                                                                               |---
+---|         Script by "Kyonax - Pilar Perfeccionista" Synchronous member          |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|                     code script from Montgomery Country RP                    |---
+---|                            Resource-Script: [init]                            |---
+---|                          Name-Script: [RegisterBackend]                       |---
+---|        Function-Script: Try to create an Account by the parameters gived      |---
+---|                   by the Register Browser GUI using an Event                  |---
+---|                                                                               |---
+---|                            DEV-DATE: 02/07/2020                               |---
+---|                               Server Script                                   |---
+---|                                number: 002                                    |---
+---|                                MIT License                                    |---
+---|                                                                               |---
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+--- Server Variables
+event = {add = addEventHandler, load = addEvent, execute = triggerClientEvent} -- Make simple calls for addEvent and triggerClientEvent by the variable event
