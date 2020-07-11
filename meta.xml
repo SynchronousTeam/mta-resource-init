@@ -21,28 +21,46 @@
     <file src="login/src/js/Init-Animation.js"></file>
     <file src="login/src/js/Validate.js"></file>
     <file src="login/src/js/Register.js"></file>
-    <!--Import de Fuentes externas con su respectivo CSS-->
+    <!--Import of respective files Fonts - CSS-->
     <file src="login/src/css/Titillium-Web.css"></file>
     <file src="login/src/fonts/TitilliumWeb-Bold.ttf"></file>
-    <!--Imágenes necesarias para el Login html - Botón y Background-->
+    <!--Essential Images - Button & Background-->
     <file src="login/src/images/Image_Background.png"></file>
     <file src="login/src/images/Image_Hide_Eye.png"></file>
     <file src="login/src/images/Image_Logo_Montgomery.png"></file>
-    <file src="login/src/images/Image_Unhide_Eye.png"></file>    
+    <file src="login/src/images/Image_Unhide_Eye.png"></file>
     <!--END LOGIN-->
+
+    <!--REGISTER-->
+    <!--Scripts Register GUI Connection-->
+    <script src="register/RegisterBrowser.lua" type="client"></script>
+    <script src="register/RegisterBackend.lua" type="server"></script>
+    <!--Import of HTML, CSS, and JS Files-->
+    <file src="register/src/register.html"></file>
+    <!--CSS-->
+    <file src="register/src/css/normalize.css"></file>
+    <file src="register/src/css/styles.css"></file>
+    <file src="register/src/css/Body.css"></file>
+    <!--JS-->
+    <!--Import of respective files Fonts - CSS-->
+    <file src="register/src/css/Titillium-Web.css"></file>
+    <file src="register/src/fonts/TitilliumWeb-Bold.ttf"></file>
+    <!--Essential Images-->
+    <file src="register/src/images/Background.png"></file>
+    <file src="register/src/images/Logo_Montgomery.png"></file>
+    <!--END REGISTER-->
+
     <!--BASE-->
     <!--Scripts Base GUI Connection-->
     <script src="base/BaseCamera.lua" type="client"></script>
     <script src="base/BaseBackend.lua" type="server"></script>
     <!--END BASE-->
-    <!--REGISTER-->
 
-    <!--END REGISTER-->
     <!--Request te funciones importantes logIn y addAccount-->
     <aclrequest>
         <right name="function.logIn" acces="true"></right>
         <right name="function.addAccount" acces="true"></right>
     </aclrequest>
     <!--PRIORITY-->
-    <download_priority_group>0</download_priority_group>
+    <download_priority_group>1</download_priority_group>
 </meta>

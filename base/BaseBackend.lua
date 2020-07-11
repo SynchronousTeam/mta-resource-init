@@ -19,6 +19,7 @@ event = {add = addEventHandler, load = addEvent, execute = triggerClientEvent} -
 function baseExecute(player)
     event.execute(player, "login-browser:remove", player)
     event.execute(player, "base-camera:on", player)
+    event.execute(player, "register-browser:show", player)
 end -- Function that Remove the Login Browser and turn on the Camera
 --- Events Created
 event.load("base-backend:execute", true)

@@ -1,19 +1,11 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-
-    /*esto lo cambiara usted*/
-}
-
-
-
 /* separación de todo el cuadro, empuja hacia abajo */
-.cuadro{
-    margin-top: 12%;
+.cuadro {
+  margin-top: 12%;
 }
 
 /* el contenido de adentro hacia los bordes, lo de adentro de hace más pequeño y se aleja de los bordes */
-table{
-    width: 80%;
+table {
+  width: 80%;
 }
 
 /* tbody{
@@ -21,170 +13,43 @@ table{
 } 
 
 no se está usando, si quiere borrelo o no
-*/ 
+*/
 
-tr{
+tr {
   /* width: 600px; */
   margin: 20px; /*el tamaño de las filas se modifican, parece que modificara la tabla entera*/
-  float: left; 
-    
+  float: left;
 }
 
-td{
-    /* separacion entre columnas  */
-    padding: 12px; /*separacion entre los input*/
+td {
+  /* separacion entre columnas  */
+  padding: 12px; /*separacion entre los input*/
 }
-
-
-
 
 fieldset {
-    padding: 2%; /*La separacion de los bordes con lo de adentro*/
-    background: #2a2a2c;
-    border: 0px; /*quita los bordes de la tabla esa grande pete*/
+  padding: 2%; /*La separacion de los bordes con lo de adentro*/
+  background: #2a2a2c;
+  border: 0px; /*quita los bordes de la tabla esa grande pete*/
 
-    width: 500px; /*para hacer grande la tabla hacia los lados, ancho..*/
-    
-    margin: 0 auto; /*lo que hace centrar el cuadro que contiene todo*/
-    box-shadow: 0px 8px #f5de1d, 0px 0 #1f1f20;
+  width: 500px; /*para hacer grande la tabla hacia los lados, ancho..*/
+
+  margin: 0 auto; /*lo que hace centrar el cuadro que contiene todo*/
+  box-shadow: 0px 8px #f5de1d, 0px 0 #1f1f20;
 }
 
-
-input[type=text],input[type=password],input[name=Discord-id]{
-    border: 1px solid #000;
-    width: 240px; /*hace más grande los cuandros donde vamos a escribir*/
-    padding: 10px; /*para hacer más grande los cuadritos*/
+input[type="text"],
+input[type="password"],
+input[name="Discord-id"] {
+  border: 1px solid #000;
+  width: 240px; /*hace más grande los cuandros donde vamos a escribir*/
+  padding: 10px; /*para hacer más grande los cuadritos*/
 }
 
-
-input[type=submit]{
-    /* position: relative; */
-    margin-left: 240px; /*con esto centre el boton, pero ojo que si pone algo o modifica se vuelve raro, tiene que cambiar otras cosas de arriba*/
+input[type="submit"] {
+  /* position: relative; */
+  margin-left: 240px; /*con esto centre el boton, pero ojo que si pone algo o modifica se vuelve raro, tiene que cambiar otras cosas de arriba*/
 }
-
 
 input[type="submit"]:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
-
-
-.version-label{
-  font-size: 12px;
-  color: #a1a1a1;
-  position: relative;
-  bottom: -115px;
-  left: -433px;
-}
-
-
-  /*esto es lo que usted hizo*/
-
-.animacion{
-    background-image: url(../img/Background.png);
-     /**background-position: -70px; /*para poder centrar la imagen ya que no podia de otra manera, lo unico que agregue*/
-    background-color: #ccc;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top:0;
-    left: 0;
-    z-index: -1;   
-}
-
-.area{
-    margin: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 97%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.area li{
-    position: absolute;
-    border-radius: 50%;
-    display: inline-block;
-    list-style: none;
-    width: 25px;
-    height: 25px;
-    background: rgba(241, 199, 9, 0.2);
-    animation: animate 20s linear infinite;
-    bottom: -150px;
-}
-
-.area li:nth-child(1){
-    left: 86%;
-    width: 22px;
-    height: 22px;
-    animation-delay: 0s;
-  }
-  
-  .area li:nth-child(2){
-    left: 12%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 1.5s;
-    animation-duration: 10s;
-  }
-  
-  .area li:nth-child(3){
-    left: 70%;
-    width: 9px;
-    height: 9px;
-    animation-delay: 5.5s;
-  }
-  
-  .area li:nth-child(4){
-    left: 42%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 0s;
-    animation-duration: 15s;
-  }
-  
-  .area li:nth-child(5){
-    left: 65%;
-    width: 12px;
-    height: 12px;
-    animation-delay: 0s;  
-  }
-  
-  .area li:nth-child(6){
-    left: 15%;
-    width: 18px;
-    height: 18px;
-    animation-delay: 3.5s;  
-  }
-  
-  .area li:nth-child(7){
-    left: 30%;
-    width: 30px;
-    height: 30px;
-    animation-delay: 2.5s;  
-  }
-  
-  .area li:nth-child(8){
-    left: 60%;
-    width: 6px;
-    height: 6px;
-    animation-delay: 6s;  
-    animation-duration: 20s;
-  }
-  
-  .area li:nth-child(9){
-    left: 24%;
-    width: 3px;
-    height: 3px;
-    animation-delay: 6.5s;  
-  }
-
-  @keyframes animate{
-    0%{
-      transform: translateY(0) rotate(0deg);
-      opacity: 1;
-    }100%{
-      transform: translateY(-800px) rotate(360deg);
-      opacity: 0;
-    }
-  }

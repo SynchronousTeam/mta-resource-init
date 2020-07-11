@@ -19,18 +19,17 @@
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
 --- Client Variables
 event = {add = addEventHandler, load = addEvent, execute = triggerServerEvent} -- Make simple calls for addEvent and triggerServerEvent by the variable event
-DGS = exports.dgs
-WINDOW_REGISTER = DGS:dgsCreateWindow(0.21, 0.20, 0.57, 0.60, "Registrarse",
-                                      true, nil, nil, nil, nil, nil,
-                                      toColor(0, 0, 0, 0))
-local BROWSER = DGS:dgsCreateBrowser(0, 0, 1, 1, true, WINDOW_REGISTER, true,
-                                     true)
-setDevelopmentMode(true, true)
+loadstring(exports.dgs:dgsImportFunction())()
+windowMenu = dgsCreateWindow(0.21, 0.20, 0.45, 0.38, "Register", true, nil, nil,
+                             nil, nil, nil, tocolor(0, 0, 0, 0))
+dgsSetVisible(windowMenu, false)
+webBrowser = dgsCreateBrowser(0, 0, 1, 1, true, windowMenu, true, true)
+
+function createRegisterBrowserGUI()
+    dgsSetVisible(windowMenu, true)
+    loadBrowserURL(webBrowser, "http://mta/[init]/register/src/register.html")
+end
 
 event.load("register-browser:show", true)
-event.add("register-browser:show", root, function()
-    addEventHandler("onClientBrowserCreated", BROWSER, function()
-        loadBrowserURL(BROWSER, "http://mta/register/src/register.html")
-        toggleBrowserDevTools(BROWSER, true)
-    end)
-end)
+event.add("register-browser:show", root,
+          function() createRegisterBrowserGUI() end, true)

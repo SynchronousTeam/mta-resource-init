@@ -31,11 +31,11 @@ function onBaseCamera(POINT_X, POINT_Y, POINT_Z, ROTATION_X, ROTATION_Y,
 end -- Function that initialice the Register Base
 --- Events Created
 event.load('base-camera:sendData', true)
-event.add('base-camera:sendData', root,
-          function() event.execute('base-backend:execute', resourceRoot) end,
-          true) -- Get the JavaScript Call
+event.add('base-camera:sendData', root, function()    
+    event.execute('base-backend:execute', resourceRoot)
+end, true) -- Get the JavaScript Call
 
 event.load('base-camera:on', true)
-event.add('base-camera:on', root, function()
+event.add('base-camera:on', root, function()    
     onBaseCamera(POINT_X, POINT_Y, POINT_Z, ROTATION_X, ROTATION_Y, ROTATION_Z)
 end, true) -- An event that turns ON the Camera and taks a City shot 
