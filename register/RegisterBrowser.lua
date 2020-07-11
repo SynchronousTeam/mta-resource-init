@@ -20,11 +20,16 @@
 --- Client Variables
 event = {add = addEventHandler, load = addEvent, execute = triggerServerEvent} -- Make simple calls for addEvent and triggerServerEvent by the variable event
 loadstring(exports.dgs:dgsImportFunction())()
-windowMenu = dgsCreateWindow(0.21, 0.20, 0.45, 0.38, "Register", true, nil, nil,
-                             nil, nil, nil, tocolor(0, 0, 0, 0))
-dgsSetVisible(windowMenu, false)
-webBrowser = dgsCreateBrowser(0, 0, 1, 1, true, windowMenu, true, true)
 
+windowMenu = dgsCreateWindow(0.21, 0.20, 0.45, 0.38, "Registro", true, nil, nil,
+                             nil, nil, nil, tocolor(0, 0, 0, 0))
+webBrowser = dgsCreateBrowser(0, 0, 1, 1, true, windowMenu, true, true)
+dgsSetVisible(windowMenu, false)
+dgsCenterElement(windowMenu)
+dgsWindowSetSizable(windowMenu, false)
+dgsWindowSetMovable(windowMenu, false)
+dgsWindowSetCloseButtonEnabled(windowMenu, false)
+dgsSetFont(windowMenu, "default-bold")
 function createRegisterBrowserGUI()
     dgsSetVisible(windowMenu, true)
     loadBrowserURL(webBrowser, "http://mta/[init]/register/src/register.html")
