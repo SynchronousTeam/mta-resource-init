@@ -1,55 +1,58 @@
-/* separación de todo el cuadro, empuja hacia abajo */
-.cuadro {
-  margin-top: 12%;
+body{
+  margin: 0;
+  padding: 0;
 }
 
-/* el contenido de adentro hacia los bordes, lo de adentro de hace más pequeño y se aleja de los bordes */
-table {
-  width: 80%;
-}
+/*todos los css estan en orden al igual que en html para poder seguir el orden*/
 
-/* tbody{
-  margin-top: 200px;  
-} 
 
-no se está usando, si quiere borrelo o no
-*/
+/* .cuadro{
 
-tr {
-  /* width: 600px; */
-  margin: 20px; /*el tamaño de las filas se modifican, parece que modificara la tabla entera*/
-  float: left;
-}
+} */
 
-td {
-  /* separacion entre columnas  */
-  padding: 12px; /*separacion entre los input*/
-}
+
+/* form {
+ 
+} */
 
 fieldset {
-  padding: 2%; /*La separacion de los bordes con lo de adentro*/
-  background: #2a2a2c;
-  border: 0px; /*quita los bordes de la tabla esa grande pete*/
+  background:#2a2a2c;
+  height: 97vh;/*cubre toda la pantalla*/
+}
 
-  width: 500px; /*para hacer grande la tabla hacia los lados, ancho..*/
+table{
+  margin: 25vh 50vh ;
+  background: #ccc; 
+  /* padding: 5px; */
+  /* margin: 0 auto; posición de la tabla que contiene todo lo de adentro en el centro del fieldset */
+}
 
-  margin: 0 auto; /*lo que hace centrar el cuadro que contiene todo*/
-  box-shadow: 0px 8px #f5de1d, 0px 0 #1f1f20;
+/* tr{
+} */
+
+td {
+  padding: 20px;    
 }
 
 input[type="text"],
 input[type="password"],
 input[name="Discord-id"] {
-  border: 1px solid #000;
-  width: 240px; /*hace más grande los cuandros donde vamos a escribir*/
-  padding: 10px; /*para hacer más grande los cuadritos*/
+border: 1px solid #000;
+width: 240px; /*hace más grande los cuandros donde vamos a escribir*/
+padding: 10px; 
 }
 
 input[type="submit"] {
-  /* position: relative; */
-  margin-left: 240px; /*con esto centre el boton, pero ojo que si pone algo o modifica se vuelve raro, tiene que cambiar otras cosas de arriba*/
+  position: relative;
+  /*TODO
+      la cosa es que en los botones estan en las mismas celda y cuando se quieren centrar se ponen una encima de otra o usted mire como le gusta más
+  */
+  /* margin-left: 50px; con esto centre el boton, pero ojo que si pone algo o modifica se vuelve raro, tiene que cambiar otras cosas de arriba */
+
 }
 
-input[type="submit"]:hover {
-  cursor: pointer;
-}
+
+
+/* Arriba | Derecha | Abajo | Izquierda 
+orden shorhand margin,padding...
+*/
