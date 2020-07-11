@@ -16,39 +16,42 @@
 -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <!-- <link rel="stylesheet" href="/css/normalize.css"> -->
-    <link rel="stylesheet" href="/mta-resource-init/register/src/css/styles.css">
+    <link rel="stylesheet" href="css/Body.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="cuadro">
         <form action="" method="POST">
             <fieldset>
                 <table>
-                        <tr>
-                            <td><input type="text" name="create-user" placeholder="usuario"></td>
-                            <td><input name="Discord-id" placeholder="Discord id"></td>
-                        </tr>
+                    <tr>
+                        <td><input type="text" name="create-user" placeholder="usuario"></td>
+                        <td><input name="Discord-id" placeholder="Discord id"></td>
+                    </tr>
 
+                    <tr>
+                        <td><input type="password" name="create-pass" placeholder="Contraseña"></td>
+                        <td><input type="password" name="repeat-pass" placeholder="Repetir Contraseña"></td>
+                    </tr>
+
+                    <div class="fondo-boton">
                         <tr>
-                            <td><input type="password" name="create-pass" placeholder="Contraseña"></td>
-                            <td><input type="password" name="repeat-pass" placeholder="Repetir Contraseña"></td>
+                            <td>
+                                <input type="submit" value="Registrar">
+                                <input type="submit" value="Entrar"></input>
+                            </td>
                         </tr>
-                        
-                        <div class="fondo-boton">
-                            <tr>
-                                <td>
-                                    <input type="submit" value="Registrar">
-                                    <input type="submit" value="Entrar"></input>
-                                </td>
-                            </tr>
-                        </div>
+                    </div>
                 </table>
             </fieldset>
         </form>
     </div>
 </body>
+
 </html>

@@ -1,45 +1,41 @@
-body{
+body {
   margin: 0;
   padding: 0;
 }
 
-/*todos los css estan en orden al igual que en html para poder seguir el orden*/
-
-
-/* .cuadro{
-
-} */
-
-
-/* form {
- 
-} */
-
 fieldset {
-  background:#2a2a2c;
-  height: 97vh;/*cubre toda la pantalla*/
+  background: #2a2a2c;
+  border: 0px;
+  box-shadow: 0px 8px #f5de1d, 0px 0px 8px #1f1f20;
+  position: absolute;
+  padding: 0px;
+  left: 0px;
+  top: 10px;
+  height: 90vh;
+  width: 99%;
 }
 
-table{
-  margin: 25vh 50vh ;
-  background: #ccc; 
-  /* padding: 5px; */
-  /* margin: 0 auto; posición de la tabla que contiene todo lo de adentro en el centro del fieldset */
+table {
+  margin: 0px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 90vh;
+  width: 100%;
+  background: #2a2a2c;
 }
-
-/* tr{
-} */
 
 td {
-  padding: 20px;    
+  padding: 20px;
 }
 
 input[type="text"],
 input[type="password"],
 input[name="Discord-id"] {
-border: 1px solid #000;
-width: 240px; /*hace más grande los cuandros donde vamos a escribir*/
-padding: 10px; 
+  border: 1px solid #000;
+  width: 240px;
+  padding: 10px;
 }
 
 input[type="submit"] {
@@ -48,11 +44,4 @@ input[type="submit"] {
       la cosa es que en los botones estan en las mismas celda y cuando se quieren centrar se ponen una encima de otra o usted mire como le gusta más
   */
   /* margin-left: 50px; con esto centre el boton, pero ojo que si pone algo o modifica se vuelve raro, tiene que cambiar otras cosas de arriba */
-
 }
-
-
-
-/* Arriba | Derecha | Abajo | Izquierda 
-orden shorhand margin,padding...
-*/
