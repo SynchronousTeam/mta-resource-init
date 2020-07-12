@@ -1,0 +1,137 @@
+/*
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+---|                                                                               |---
+---|              CSS-Code by "Pixxa & Kyonax" Synchronous Developers              |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|  Github: https://github.com/MrPixxa-games • G-Mail: pixxaunited@gmail.com     |---
+---|                       code CSS from Montgomery Country RP                     |---
+---|                               Resource-CSS: [init]                            |---
+---|                                Name-CSS: [Input]                              |---
+---|                 Function-CSS: Give the input animation and styles             |---
+---|                                                                               |---
+---|                            DEV-DATE: 11/07/2020                               |---
+---|                                number: 003                                    |---
+---|                                MIT License                                    |---
+---|                                                                               |---
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+*/
+#input-user {
+  position: relative;
+  left: 90px;
+  top: 15px;
+}
+#input-discord-id {
+  position: relative;
+  left: 55px;
+  top: 15px;
+}
+#input-password {
+  position: relative;
+  left: 90px;
+  bottom: 15px;
+}
+#input-password-verify {
+  position: relative;
+  left: 55px;
+  bottom: 15px;
+}
+/*Style for all the Inputs*/
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  width: 60%;
+}
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.2rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__field_discord {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field_discord::placeholder {
+  color: transparent;
+}
+.form__field_discord:placeholder-shown ~ .form__label {
+  font-size: 1.2rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #9b9b9b;
+}
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #dcc719, #f5de1d);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #dcc719;
+  font-weight: 700;
+}
+
+.form__field_discord:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #7c2dd6, #9539eb);
+  border-image-slice: 1;
+}
+.form__field_discord:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #7c2dd6;
+  font-weight: 700;
+}
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+  box-shadow: none;
+}
+/* reset input */
+.form__field_discord:required,
+.form__field_discord:invalid {
+  box-shadow: none;
+}

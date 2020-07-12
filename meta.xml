@@ -37,9 +37,10 @@
     <script src="register/RegisterBackend.lua" type="server"></script>
     <!--Import of HTML, CSS, and JS Files-->
     <file src="register/src/register.html"></file>
-    <!--CSS-->
-    <file src="register/src/css/styles.css"></file>
+    <!--CSS-->    
     <file src="register/src/css/Body.css"></file>
+    <file src="register/src/css/Form.css"></file>
+    <file src="register/src/css/Input.css"></file>
     <!--JS-->
     <!--Import of respective files Fonts - CSS-->
     <file src="register/src/css/Titillium-Web.css"></file>

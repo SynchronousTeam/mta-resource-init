@@ -21,30 +21,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="css/Titillium-Web.css">
     <link rel="stylesheet" href="css/Body.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/Form.css">
+    <link rel="stylesheet" href="css/Input.css">
 </head>
 
 <body>
-    <div class="cuadro">
-        <form action="" method="POST">
+    <div>
+        <form action="" method="POST" onsubmit="return false">
             <fieldset>
                 <table>
                     <tr>
-                        <td><input type="text" name="create-user" placeholder="usuario"></td>
-                        <td><input name="Discord-id" placeholder="Discord id"></td>
+                        <td>
+                            <div class="form__group field" id="input-user">
+                                <input type="input" name="create-user" placeholder="Usuario" class="form__field">
+                                <label for="name" class="form__label">Usuario</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form__group field" id="input-discord-id">
+                                <input type="input" name="discord-id" placeholder="Discord ID"
+                                    class="form__field_discord">
+                                <label for="name" class="form__label">Discord ID</label>
+                            </div>
+                        </td>
                     </tr>
-
                     <tr>
-                        <td><input type="password" name="create-pass" placeholder="Contraseña"></td>
-                        <td><input type="password" name="repeat-pass" placeholder="Repetir Contraseña"></td>
+                        <td>
+                            <div class="form__group field" id="input-password">
+                                <input type="password" name="create-password" placeholder="Contraseña"
+                                    class="form__field">
+                                <label for="name" class="form__label">Contraseña</label>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form__group field" id="input-password-verify">
+                                <input type="password" name="repeat-password" placeholder="Repetir Contraseña"
+                                    class="form__field">
+                                <label for="name" class="form__label">Repetir Contraseña</label>
+                            </div>
+                        </td>
                     </tr>
-
                     <div class="fondo-boton">
                         <tr>
                             <td>
-                                <input type="submit" value="Registrar">
-                                <input type="submit" value="Entrar"></input>
+                                <input type="submit" value="Registrar"></input>
+                                <input type="button" value="Entrar"></input>
                             </td>
                         </tr>
                     </div>
