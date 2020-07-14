@@ -17,23 +17,23 @@
 */
 #input-user {
   position: relative;
-  left: 90px;
-  top: 15px;
+  left: 96px;
+  top: 20px;
 }
 #input-discord-id {
   position: relative;
-  left: 55px;
-  top: 15px;
+  left: 60px;
+  top: 20px;
 }
 #input-password {
   position: relative;
-  left: 90px;
-  bottom: 15px;
+  left: 96px;
+  bottom: -5px;
 }
 #input-password-verify {
   position: relative;
-  left: 55px;
-  bottom: 15px;
+  left: 60px;
+  bottom: -5px;
 }
 /*Style for all the Inputs*/
 .form__group {

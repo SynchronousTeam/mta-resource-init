@@ -21,27 +21,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <!--CSS Files-->
     <link rel="stylesheet" href="css/Titillium-Web.css">
     <link rel="stylesheet" href="css/Body.css">
     <link rel="stylesheet" href="css/Form.css">
     <link rel="stylesheet" href="css/Input.css">
+    <link rel="stylesheet" href="css/Button.css">
+    <link rel="stylesheet" href="css/Tooltip.css">
+    <!--JS Files-->
+    <script type="text/javascript" src="./js/Button.js"></script>
+    <script type="text/javascript" src="./js/Validate.js"></script>
 </head>
 
 <body>
     <div>
-        <form action="" method="POST" onsubmit="return false">
+        <label for="Tooltips" class="error" id="error">Tooltip Error</label>
+        <label for="Tooltips" class="error">Tooltip Succes</label>
+        <label for="Tooltips" class="error">Tooltip Warning</label>
+        <label for="Tooltips" class="error">Tooltip Info</label>
+        <label for="Tooltips" class="error">Tooltip Error-label</label>
+
+        <form action="" method="POST" onsubmit="return validateForm()">
             <fieldset>
                 <table>
                     <tr>
                         <td>
                             <div class="form__group field" id="input-user">
-                                <input type="input" name="create-user" placeholder="Usuario" class="form__field">
+                                <input type="input" name="create-user" placeholder="Usuario" class="form__field" id="user">
                                 <label for="name" class="form__label">Usuario</label>
                             </div>
                         </td>
                         <td>
                             <div class="form__group field" id="input-discord-id">
-                                <input type="input" name="discord-id" placeholder="Discord ID"
+                                <input type="input" name="discord-id" placeholder="Discord ID" id="discord"
                                     class="form__field_discord">
                                 <label for="name" class="form__label">Discord ID</label>
                             </div>
@@ -50,27 +62,30 @@
                     <tr>
                         <td>
                             <div class="form__group field" id="input-password">
-                                <input type="password" name="create-password" placeholder="Contraseña"
+                                <input type="password" name="create-password" placeholder="Contraseña" id="password"
                                     class="form__field">
                                 <label for="name" class="form__label">Contraseña</label>
                             </div>
                         </td>
                         <td>
                             <div class="form__group field" id="input-password-verify">
-                                <input type="password" name="repeat-password" placeholder="Repetir Contraseña"
+                                <input type="password" name="repeat-password" placeholder="Repetir Contraseña" id="repeat-password"
                                     class="form__field">
                                 <label for="name" class="form__label">Repetir Contraseña</label>
                             </div>
                         </td>
                     </tr>
-                    <div class="fondo-boton">
-                        <tr>
-                            <td>
-                                <input type="submit" value="Registrar"></input>
-                                <input type="button" value="Entrar"></input>
-                            </td>
-                        </tr>
-                    </div>
+                    <tr>
+                        <td>
+                            <div>
+                                <div class="button-triangle" id="button-triangle"></div>
+                                <div class="button-triangle-background" id="button-rounded"></div>
+                                <input type="submit" title="Iniciar Sesión" class="button-input-submit"
+                                    id="button-input-submit" onmouseout="mouseOut()" onmouseover="mouseOver()">
+                                <a href="" onclick="return callLogIN()" class="link-login" id="link-login">INGRESAR</a>
+                            </div>
+                        </td>
+                    </tr>
                 </table>
             </fieldset>
         </form>

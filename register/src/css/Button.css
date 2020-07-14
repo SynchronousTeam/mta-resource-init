@@ -1,0 +1,77 @@
+/*
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+---|                                                                               |---
+---|              CSS-Code by "Pixxa & Kyonax" Synchronous Developers              |---
+---|       Github: https://github.com/Kyonax • G-Mail: kyonax.corp@gmail.com       |---
+---|  Github: https://github.com/MrPixxa-games • G-Mail: pixxaunited@gmail.com     |---
+---|                       code CSS from Montgomery Country RP                     |---
+---|                               Resource-CSS: [init]                            |---
+---|                               Name-CSS: [Button]                              |---
+---|                  Function-CSS: Give Button animations and styles              |---
+---|                                                                               |---
+---|                            DEV-DATE: 11/07/2020                               |---
+---|                                number: 004                                    |---
+---|                                MIT License                                    |---
+---|                                                                               |---
+---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
+*/
+.button-triangle-background {
+    position: relative;    
+    top: 35px;
+    left: 330px;
+    border: none;    
+    background-color: #f5de1d;
+    border-radius: 40px;
+    width: 160px;
+    height: 40px;
+    z-index: 0;
+  } /*Does a background to the triangle geometric figure*/
+  
+  .button-triangle-background-hover {
+    background-color: #fae631;
+    box-shadow: 0px 0px 8px #fae631;
+  } /*Add a tiny effect to the background button*/
+  
+  .button-triangle {
+    position: relative;   
+    top: 67px; 
+    left: 396px;
+    border-color: #2a2a2c transparent;
+    border-style: solid;
+    border-width: 0px 14px 25px 14px;
+    height: 0px;
+    width: 0px;
+    z-index: 1;
+  } /*Does the geometric figure to the button submit*/
+  
+  .button-input-submit {
+    position: relative; 
+    left: 330px;
+    top: -10px;       
+    font-size: 0px;
+    width: 160px;
+    height: 50px;
+    background: none;
+    border: none;
+    z-index: 2;
+  } /*Give the effects to the Submit Button*/
+  
+  .button-input-submit:focus {
+    outline: none;
+  }
+
+  .link-login {
+    font-size: 17px;
+    font-weight: bolder;
+    color: #1d1d1d;
+    text-decoration: none;
+    position: relative;
+    top: -5px;
+    left: 372px;
+    display: block;
+    width: 30px;
+  } /*Give the principal properties to the Login link (a)*/  
+  .link-login:hover {
+    color: #c7c7c7;
+  } /*Give a change when the mouse is hover the Link*/
+  
