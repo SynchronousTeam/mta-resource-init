@@ -21,19 +21,19 @@
 event = {add = addEventHandler, load = addEvent, execute = triggerServerEvent} -- Make simple calls for addEvent and triggerServerEvent by the variable event
 local WINDOW_WIDTH, WINDOW_HEIGHT = guiGetScreenSize() -- Get the Size from the Game Window (global)
 --- HTML Web Page Creation
-URL_PAGE = "http://mta/[init]/login/src/login.html" -- Location of the HTML File (global)
+local URL_PAGE = "http://mta/[init]/login/src/login.html" -- Location of the HTML File (global)
 local CEF = guiCreateBrowser(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, true, false,
                              false) -- Create the Browser using the Default GUI MTA interface (global)
 local BROWSER = guiGetBrowser(CEF) -- Get the Browser Object (global)
 --- Functions
-function deleteBrowserGUI()
+function deleteLoginBrowserGUI()
     if isElement(CEF) then
         destroyElement(CEF)
         showCursor(false)
     end
 end -- This function removes the Browser GUI
 
-function createBrowserGUI()
+function createLoginBrowserGUI()
     if not isElement(CEF) then
         CEF = guiCreateBrowser(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, true, false,
                                false)
@@ -59,10 +59,10 @@ event.add('login-browser:sendData', root, function(user, password)
 end, true) -- An Event called from the Browser that sends the requiered data
 
 event.load("login-browser:show", true)
-event.add("login-browser:show", root, function() createBrowserGUI() end) -- An Event that shows the Login Browser GUI
+event.add("login-browser:show", root, function() createLoginBrowserGUI() end) -- An Event that shows the Login Browser GUI
 
 event.load('login-browser:remove', true)
-event.add('login-browser:remove', root, function() deleteBrowserGUI() end) -- An Event that Remove the Browser GUI
+event.add('login-browser:remove', root, function() deleteLoginBrowserGUI() end) -- An Event that Remove the Browser GUI
 
 event.load("browser-label:error", true)
 event.add("browser-label:error", root, function(error) sendError(error) end) -- An event that get a parameter and show it into the Browser GUI like an Error

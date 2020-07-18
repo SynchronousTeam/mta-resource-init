@@ -16,14 +16,16 @@
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•--- 
  */
 function validateForm() {
+  //Inputs that are called from the Register
   const user_input = document.getElementById("user").value;
   const password_input = document.getElementById("password").value;
   const discord_input = document.getElementById("discord").value;
   const repeat_password_input = document.getElementById("repeat-password")
     .value;
+  //Error Messages called from the Tooltip Css File
   const error_tooltip = document.getElementById("error");
   const error_label_tooltip = document.querySelector(".error:nth-child(5)");
-  //Eventos MTA
+  //Fill inputs Validations
   if (user_input == "") {
     error_tooltip.innerHTML = "Este campo no puede estar vacío [ERROR 4]";
     error_tooltip.style.display = "initial";
@@ -46,7 +48,7 @@ function validateForm() {
       error_tooltip.style.top = "26.8%";
       error_tooltip.style.left = "58%";
       error_label_tooltip.style = "display: none";
-      return false; 
+      return false;
     } else if (repeat_password_input == "") {
       error_tooltip.innerHTML = "Este campo no puede estar vacío [ERROR 7]";
       error_tooltip.style.display = "initial";
