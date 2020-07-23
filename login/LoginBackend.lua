@@ -17,12 +17,12 @@
 --- Server Variables
 event = {add = addEventHandler, load = addEvent, execute = triggerClientEvent} -- Make simple calls for addEvent and triggerClientEvent by the variable event
 --- Variable Error
-error = {
+local error = {
     account = "La cuenta no existe en la Base de Datos [ERROR 3]",
     information = "La información ingresada es incorrecta [ERROR 4]"
-} -- Make simple calls for errors (account, information) by the variable error
+} -- Make simple String calls for errors (account, information) by the variable error
 --- Functions
-function loginAttempt(player, user, password)    
+function loginAttempt(player, user, password)
     local account = getAccount(user) -- Check on the Database the User
     if not account then -- If the account doesn't exist        
         event.execute(player, 'browser-label:error', player, error.account) -- Trigger an Event that shows the error.account on the Browser

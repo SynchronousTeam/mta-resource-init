@@ -56,6 +56,13 @@ function validateForm() {
       error_tooltip.style.left = "58%";
       error_label_tooltip.style = "display: none";
       return false;
+    } else if (repeat_password_input !== password_input) {
+      mta.triggerEvent(
+        "tooltip-backend:execute",
+        "Las contraseñas no coinciden [ERROR 8]",
+        "error"
+      );
+      return false;
     }
   }
 } //Validate if the User and Password inputs are Fill, then Trigger a Lua Event

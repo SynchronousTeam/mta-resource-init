@@ -67,7 +67,6 @@ event.add('login-browser:remove', root, function() deleteLoginBrowserGUI() end) 
 event.load("browser-label:error", true)
 event.add("browser-label:error", root, function(error) sendError(error) end) -- An event that get a parameter and show it into the Browser GUI like an Error
 --- MTA Events
-event.add("onClientResourceStart", resourceRoot, function()
-    createBrowserGUI()    
-end) -- When the resource [init] starts Create the Browser GUI
+event.add("onClientResourceStart", resourceRoot,
+          function() createLoginBrowserGUI() end) -- When the resource [init] starts Create the Browser GUI
 

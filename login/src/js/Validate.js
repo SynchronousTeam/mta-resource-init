@@ -37,7 +37,7 @@ function validateForm() {
       return false;
     } else {
       error_tooltip.style.display = "none";
-      mta.triggerEvent("login-browser:sendData", user_input, password_input);
+      mta.triggerEvent("login-browser:sendData", user_input, password_input);      
       return false;
     }
   }
