@@ -23,7 +23,7 @@ loadstring(exports.dgs:dgsImportFunction())() -- Load all the functions from the
 --- GUI Init
 local URL_PAGE = "http://mta/[init]/register/src/register.html" -- Location of the HTML File (global)
 local DGS_WINDOW = dgsCreateWindow(0.21, 0.20, 0.45, 0.45, "Registro", true,
-                                   nil, nil, nil, nil, nil, tocolor(0, 0, 0, 0)) -- Create a Window Canvas using DGS (global)
+                                   nil, 0, nil, nil, nil, tocolor(0, 0, 0, 0)) -- Create a Window Canvas using DGS (global)
 local BROWSER = dgsCreateBrowser(0, 0, 1, 1, true, DGS_WINDOW, true, true) -- Create the Browser (global)
 --- GUI Parameters
 dgsCenterElement(DGS_WINDOW) -- Center the DGS Window on the Screen (global)
@@ -36,8 +36,7 @@ dgsSetFont(DGS_WINDOW, "default-bold") -- Bold Font (global)
 function createRegisterBrowserGUI()
     if not isElement(DGS_WINDOW) then
         DGS_WINDOW = dgsCreateWindow(0.21, 0.20, 0.45, 0.45, "Registro", true,
-                                     nil, nil, nil, nil, nil,
-                                     tocolor(0, 0, 0, 0)) -- Create a Window Canvas using DGS
+                                     nil, 0, nil, nil, nil, tocolor(0, 0, 0, 0)) -- Create a Window Canvas using DGS
         BROWSER = dgsCreateBrowser(0, 0, 1, 1, true, DGS_WINDOW, true, true) -- Create the Browser
     end -- If the Browser GUI doesn't exist, create one
 
@@ -48,3 +47,8 @@ end -- Create the DGS GUI Browser
 event.load("register-browser:show", true)
 event.add("register-browser:show", root,
           function() createRegisterBrowserGUI() end, true) -- Create the Event that Trigger the previous Function
+--- Import MTA Functions
+event.load("tooltip-browser:show", true)
+event.add("tooltip-browser:show", root, function(message)
+    SEND_ERROR_TOOLTIP = exports["[tooltip]"]:showTooltipError(message)          
+end, true)
