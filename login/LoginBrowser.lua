@@ -19,25 +19,28 @@
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
 --- Client Variables
 event = {add = addEventHandler, load = addEvent, execute = triggerServerEvent} -- Make simple calls for addEvent and triggerServerEvent by the variable event
+local const = {position = {NONE = 0}}
 local LOGIN_WINDOW_WIDTH, LOGIN_WINDOW_HEIGHT = guiGetScreenSize() -- Get the Size from the Game Window (global)
 --- HTML Web Page Creation
 local LOGIN_URL_PAGE = "http://mta/[init]/login/src/login.html" -- Location of the HTML File (global)
-local LOGIN_CEF = guiCreateBrowser(0, 0, LOGIN_WINDOW_WIDTH,
-                                   LOGIN_WINDOW_HEIGHT, true, false, false) -- Create the Browser using the Default GUI MTA interface (global)
+local LOGIN_CEF = guiCreateBrowser(const.position.NONE, const.position.NONE,
+                                   LOGIN_WINDOW_WIDTH, LOGIN_WINDOW_HEIGHT,
+                                   true, false, false) -- Create the Browser using the Default GUI MTA interface (global)
 local LOGIN_BROWSER = guiGetBrowser(LOGIN_CEF) -- Get the Browser Object (global)
 --- Functions
 
-function deleteBrowserLoginGUI()
+local function deleteBrowserLoginGUI()
     if isElement(LOGIN_CEF) then
         destroyElement(LOGIN_CEF)
         showCursor(false)
     end
 end -- This function removes the Browser GUI
 
-function createBrowserLoginGUI()
+local function createBrowserLoginGUI()
     if not isElement(LOGIN_CEF) then
-        LOGIN_CEF = guiCreateBrowser(0, 0, LOGIN_WINDOW_WIDTH,
-                                     LOGIN_WINDOW_HEIGHT, true, false, false)
+        LOGIN_CEF = guiCreateBrowser(const.position.NONE, const.position.NONE,
+                                     LOGIN_WINDOW_WIDTH, LOGIN_WINDOW_HEIGHT,
+                                     true, false, false)
         LOGIN_BROWSER = guiGetBrowser(LOGIN_CEF)
     end -- If the Browser GUI doesn't exist, create one
 
@@ -57,12 +60,16 @@ event.load("login-browser:show", true)
 event.add("login-browser:show", root, function() createBrowserLoginGUI() end) -- An Event that shows the Login Browser GUI
 
 event.load('login-browser:remove', true)
-event.add('login-browser:remove', root, function() deleteBrowserLoginGUI() end) -- An Event that Remove the Browser GUI
+event.add('login-browser:remove', root, function()
+    base_tooltip_browser_remove = exports["[tooltip]"]:deleteBrowserTooltipGUI()
+    deleteBrowserLoginGUI()
+end) -- An Event that Remove the Browser GUI
 
 event.load("login-tooltip-browser:show", true)
 event.add("login-tooltip-browser:show", root, function(message)
     login_tooltip_error_send = exports["[tooltip]"]:showTooltipError(message)
-end) -- An event that get a parameter and show it into the Browser GUI like an Error
+end) -- An event that get a parameter and show it in a Independent Browser GUI like an Error
+
 --- MTA Events
 event.add("onClientResourceStart", resourceRoot,
           function() createBrowserLoginGUI() end) -- When the resource [init] starts Create the Browser GUI
