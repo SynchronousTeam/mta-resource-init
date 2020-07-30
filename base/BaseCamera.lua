@@ -20,7 +20,6 @@ event = {add = addEventHandler, load = addEvent, execute = triggerServerEvent} -
 local function onBaseCamera(POSITION_X, POSITION_Y, POSITION_Z, ROTATION_X,
                             ROTATION_Y, ROTATION_Z, CAMERA_IN_OPACITY,
                             base_game_hud_component)
-
     for i = 1, table.getn(base_game_hud_component) do
         setPlayerHudComponentVisible(base_game_hud_component[i], false)
     end -- This for removes all the HUD Components catched from the array base_component    

@@ -20,11 +20,30 @@
 --- Client Variables
 event = {add = addEventHandler, load = addEvent, execute = triggerServerEvent} -- Make simple calls for addEvent and triggerServerEvent by the variable event
 loadstring(exports.dgs:dgsImportFunction())() -- Load all the functions from the DGS Resource
+local const = {
+    position = {X_WINDOW = 0.21, Y_WINDOW = 0.20, NONE = 0},
+    size = {
+        W_WINDOW = 0.45,
+        H_WINDOW = 0.45,
+        W_BROWSER = 1,
+        H_BROWSER = 1,
+        TITLE_SIZE = 0
+    },
+    text = {NAME_WINDOW = "Registro"}
+}
 --- GUI Init
 local REGISTER_URL_PAGE = "http://mta/[init]/register/src/register.html" -- Location of the HTML File (global)
-local REGISTER_DGS_WINDOW = dgsCreateWindow(0.21, 0.20, 0.45, 0.45, "Registro", true,
-                                   nil, 0, nil, nil, nil, tocolor(0, 0, 0, 0)) -- Create a Window Canvas using DGS (global)
-local REGISTER_BROWSER = dgsCreateBrowser(0, 0, 1, 1, true, REGISTER_DGS_WINDOW, true, true) -- Create the Browser (global)
+local REGISTER_DGS_WINDOW = dgsCreateWindow(const.position.X_WINDOW,
+                                            const.position.Y_WINDOW,
+                                            const.size.W_WINDOW,
+                                            const.size.H_WINDOW,
+                                            const.text.NAME_WINDOW, true, nil,
+                                            const.size.TITLE_SIZE, nil, nil,
+                                            nil, tocolor(0, 0, 0, 0)) -- Create a Window Canvas using DGS (global)
+local REGISTER_BROWSER = dgsCreateBrowser(const.size.NONE, const.size.NONE,
+                                          const.size.W_BROWSER,
+                                          const.size.H_BROWSER, true,
+                                          REGISTER_DGS_WINDOW, true, true) -- Create the Browser (global)
 --- GUI Parameters
 dgsCenterElement(REGISTER_DGS_WINDOW) -- Center the DGS Window on the Screen (global)
 dgsWindowSetSizable(REGISTER_DGS_WINDOW, false) -- Does the Window not Sizable (global)
@@ -35,9 +54,17 @@ dgsSetFont(REGISTER_DGS_WINDOW, "default-bold") -- Bold Font (global)
 --- Functions
 function createRegisterBrowserGUI()
     if not isElement(REGISTER_DGS_WINDOW) then
-        REGISTER_DGS_WINDOW = dgsCreateWindow(0.21, 0.20, 0.45, 0.45, "Registro", true,
-                                     nil, 0, nil, nil, nil, tocolor(0, 0, 0, 0)) -- Create a Window Canvas using DGS
-        REGISTER_BROWSER = dgsCreateBrowser(0, 0, 1, 1, true, REGISTER_DGS_WINDOW, true, true) -- Create the Browser
+        REGISTER_DGS_WINDOW = dgsCreateWindow(const.position.X_WINDOW,
+                                              const.position.Y_WINDOW,
+                                              const.size.W_WINDOW,
+                                              const.size.H_WINDOW,
+                                              const.text.NAME_WINDOW, true, nil,
+                                              const.size.TITLE_SIZE, nil, nil,
+                                              nil, tocolor(0, 0, 0, 0)) -- Create a Window Canvas using DGS
+        REGISTER_BROWSER = dgsCreateBrowser(const.size.NONE, const.size.NONE,
+                                            const.size.W_BROWSER,
+                                            const.size.H_BROWSER, true,
+                                            REGISTER_DGS_WINDOW, true, true) -- Create the Browser
     end -- If the Browser GUI doesn't exist, create one
 
     dgsSetVisible(REGISTER_DGS_WINDOW, true)
