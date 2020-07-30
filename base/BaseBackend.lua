@@ -15,8 +15,19 @@
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---
 --- Server Variables
 event = {add = addEventHandler, load = addEvent, execute = triggerClientEvent} -- Make simple calls for addEvent and triggerClientEvent by the variable event
+local const = {
+    position = {X = 1488, Y = 250, Z = 53},
+    rotation = {X = 0, Y = 90, Z = -65},
+    fx = {CAMERA_IN_OPACITY = 3}
+}
+local base_game_hud_component = {"radar", "area_name"}
 --- Functions
-local function showBase(player) event.execute(player, "base-camera:on", player) end -- Function that Remove the Login Browser and turn on the Camera
+local function showBase(player)
+    event.execute(player, "base-camera:on", player, const.position.X,
+                  const.position.Y, const.position.Z, const.rotation.X,
+                  const.rotation.Y, const.rotation.Z,
+                  const.fx.CAMERA_IN_OPACITY, base_game_hud_component)
+end -- Function that Remove the Login Browser and turn on the Camera
 
 local function openBaseRegister(player)
     event.execute(player, "login-browser:remove", player)
@@ -24,11 +35,11 @@ local function openBaseRegister(player)
 end
 --- Events Created
 event.load("base-backend:show", true)
-event.add("base-backend:show", root, function() showBase(client) end)
+event.add("base-backend:show", root, function() showBase(client) end, true)
 
 event.load("base-backend-register:show", true)
 event.add("base-backend-register:show", root, function()
-    showBase(client)
     openBaseRegister(client)
-end) -- Execute some Events from Login and Base
+    showBase(client)
+end, true) -- Execute some Events from Login and Base
 

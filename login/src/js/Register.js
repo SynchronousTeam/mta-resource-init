@@ -16,6 +16,6 @@
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•--- 
  */
 function callRegister() {
-  mta.triggerEvent("base-backend-register:show");
+  mta.triggerEvent("base-camera-register:show");
   return false;
 } //When the User Click on the Link Register this function Call a Lua Event
