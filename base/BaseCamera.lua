@@ -22,12 +22,12 @@ local function onBaseCamera(POSITION_X, POSITION_Y, POSITION_Z, ROTATION_X,
                             base_game_hud_component)
     for i = 1, table.getn(base_game_hud_component) do
         setPlayerHudComponentVisible(base_game_hud_component[i], false)
-    end -- This for removes all the HUD Components catched from the array base_component    
+    end -- This for removes all the HUD Components catched from the array base_component        
     showCursor(true)
     showChat(false)
     fadeCamera(true, CAMERA_IN_OPACITY) -- Slowly fade the camera in to make the screen visible 
     setCameraMatrix(POSITION_X, POSITION_Y, POSITION_Z, ROTATION_X, ROTATION_Y,
-                    ROTATION_Z) -- set the player's camera to a fixed position, looking at a fixed point
+                    ROTATION_Z) -- set the player's camera to a fixed position, looking at a fixed point    
 end -- Function that initialice the Register Base
 --- Events Created
 event.load('base-camera:on', true)

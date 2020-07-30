@@ -59,7 +59,8 @@ function validateForm() {
     } else if (repeat_password_input !== password_input) {
       mta.triggerEvent(
         "register-tooltip-browser:show",
-        "Las contraseñas no coinciden. Vuelve a intentarlo [ERROR 8]"
+        "Las contraseñas no coinciden. Vuelve a intentarlo [ERROR 8]",
+        "2"
       );
       return false;
     }

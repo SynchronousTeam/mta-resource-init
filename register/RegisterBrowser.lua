@@ -76,6 +76,8 @@ event.add("register-browser:show", root,
           function() createRegisterBrowserGUI() end, true) -- Create the Event that Trigger the previous Function
 --- Import MTA Functions
 event.load("register-tooltip-browser:show", true)
-event.add("register-tooltip-browser:show", root, function(message)
-    register_tooltip_error_send = exports["[tooltip]"]:showTooltipError(message)
+event.add("register-tooltip-browser:show", root,
+          function(message, type_tooltip)
+    register_tooltip_error_send = exports["[tooltip]"]:showTooltip(message,
+                                                                   type_tooltip)
 end, true)

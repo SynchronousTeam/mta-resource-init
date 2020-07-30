@@ -5,5 +5,5 @@
   font-weight: 700;
   font-display: swap;
   src: local("Titillium Web Bold"), local("TitilliumWeb-Bold"),
-    url("http://mta/[init]/register/src/fonts/TitilliumWeb-Bold.ttf");
+    url("../fonts/TitilliumWeb-Bold.ttf");
 }
