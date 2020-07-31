@@ -40,7 +40,8 @@ local REGISTER_DGS_WINDOW = dgsCreateWindow(const.position.X_WINDOW,
                                             const.text.NAME_WINDOW, true, nil,
                                             const.size.TITLE_SIZE, nil, nil,
                                             nil, tocolor(0, 0, 0, 0)) -- Create a Window Canvas using DGS (global)
-local REGISTER_BROWSER = dgsCreateBrowser(const.size.NONE, const.size.NONE,
+local REGISTER_BROWSER = dgsCreateBrowser(const.position.NONE,
+                                          const.position.NONE,
                                           const.size.W_BROWSER,
                                           const.size.H_BROWSER, true,
                                           REGISTER_DGS_WINDOW, true, true) -- Create the Browser (global)
@@ -61,7 +62,8 @@ function createRegisterBrowserGUI()
                                               const.text.NAME_WINDOW, true, nil,
                                               const.size.TITLE_SIZE, nil, nil,
                                               nil, tocolor(0, 0, 0, 0)) -- Create a Window Canvas using DGS
-        REGISTER_BROWSER = dgsCreateBrowser(const.size.NONE, const.size.NONE,
+        REGISTER_BROWSER = dgsCreateBrowser(const.position.NONE,
+                                            const.position.NONE,
                                             const.size.W_BROWSER,
                                             const.size.H_BROWSER, true,
                                             REGISTER_DGS_WINDOW, true, true) -- Create the Browser

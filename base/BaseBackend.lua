@@ -29,17 +29,14 @@ local function showBase(player)
                   const.fx.CAMERA_IN_OPACITY, base_game_hud_component)
 end -- Function that Remove the Login Browser and turn on the Camera
 
-local function openBaseRegister(player)
-    event.execute(player, "login-browser:remove", player)
-    event.execute(player, "register-browser:show", player)
-end
 --- Events Created
 event.load("base-backend:show", true)
 event.add("base-backend:show", root, function() showBase(client) end, true)
 
 event.load("base-backend-register:show", true)
 event.add("base-backend-register:show", root, function()
-    openBaseRegister(client)
+    event.execute(client, "login-browser:remove", client)
     showBase(client)
+    event.execute(client, "register-browser:show", client)
 end, true) -- Execute some Events from Login and Base
 

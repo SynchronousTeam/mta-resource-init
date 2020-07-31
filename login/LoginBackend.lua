@@ -22,7 +22,7 @@ local error = {
         account = "La cuenta no existe en la Base de Datos [ERROR 3]",
         information = "La información ingresada es incorrecta [ERROR 4]"
     },
-    type = "5"
+    type = "ERROR"
 } -- Make simple String calls for errors (account, information) by the variable error
 --- Functions
 function loginAttempt(player, user, password)
