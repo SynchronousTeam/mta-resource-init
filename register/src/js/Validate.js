@@ -60,7 +60,7 @@ function validateForm() {
       mta.triggerEvent(
         "register-tooltip-browser:show",
         "Las contraseñas no coinciden. Vuelve a intentarlo [ERROR 8]",
-        "INFO"
+        "ERROR"
       );
       return false;
     }
