@@ -19,8 +19,8 @@ event = {add = addEventHandler, load = addEvent, execute = triggerClientEvent} -
 --- Variable Error
 local error = {
     message = {
-        account = "La cuenta no existe en la Base de Datos [ERROR 3]",
-        information = "La información ingresada es incorrecta [ERROR 4]"
+        account = "No se ha podido encontrar la cuenta en la Base de Datos [ERROR 3]",
+        information = "La información ingresada es incorrecta. Inténtelo nuevamente [ERROR 4]"
     },
     type = "ERROR"
 } -- Make simple String calls for errors (account, information) by the variable error
