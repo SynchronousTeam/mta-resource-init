@@ -14,7 +14,7 @@
 ---|                                MIT License                                    |---
 ---|                                                                               |---
 ---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•---•--- 
- */
+*/
 function validateForm() {
   const user_input = document.getElementById("user").value;
   const password_input = document.getElementById("password").value;
@@ -37,7 +37,7 @@ function validateForm() {
       return false;
     } else {
       error_tooltip.style.display = "none";
-      mta.triggerEvent("login-browser:sendData", user_input, password_input);      
+      mta.triggerEvent("login-browser:sendData", user_input, password_input);
       return false;
     }
   }
