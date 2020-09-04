@@ -1,12 +1,17 @@
 <meta>
     <info author="Kyonax - Pilar Perfeccionista" version="1.0.3" name="init" description="Login, Register and Player Menu HTML, JavaScript and CSS GUI connection" type="GUI/BACKEND" />
-    <!--LOGIN-->
-    <!--Scripts Login GUI Connection-->
+        <!--ERROR-->
+    <file src="src/error/InitTooltipMessage.lua" type='client'></file>
+    <export function="getError" type="client"></export>
+    <export function="getTooltip" type="client"></export>
+
+        <!--LOGIN-->
+        <!--Scripts Login GUI Connection-->
     <script src="login/LoginBrowser.lua" type="client"></script>
     <script src="login/LoginBackend.lua" type="server"></script>
-    <!--Import of HTML, CSS and JS Files-->
+        <!--Import of HTML, CSS and JS Files-->
     <file src="login/src/login.html"></file>
-    <!--CSS-->
+        <!--CSS-->
     <file src="login/src/css/Body.css"></file>
     <file src="login/src/css/Button.css"></file>
     <file src="login/src/css/FX.css"></file>
@@ -16,55 +21,54 @@
     <file src="login/src/css/Label.css"></file>
     <file src="login/src/css/Responsive.css"></file>
     <file src="login/src/css/Tooltip.css"></file>
-    <!--JS-->
+        <!--JS-->
     <file src="login/src/js/Button.js"></file>
     <file src="login/src/js/Init-Animation.js"></file>
     <file src="login/src/js/Validate.js"></file>
     <file src="login/src/js/Register.js"></file>
-    <!--Import of respective files Fonts - CSS-->
+        <!--Import of respective files Fonts - CSS-->
     <file src="login/src/css/Titillium-Web.css"></file>
     <file src="login/src/fonts/TitilliumWeb-Bold.ttf"></file>
-    <!--Essential Images - Button & Background-->
+        <!--Essential Images - Button & Background-->
     <file src="login/src/images/Image_Background.png"></file>
     <file src="login/src/images/Image_Hide_Eye.png"></file>
     <file src="login/src/images/Image_Logo_Montgomery.png"></file>
     <file src="login/src/images/Image_Unhide_Eye.png"></file>
-    <!--END LOGIN-->
+        <!--END LOGIN-->
 
-    <!--REGISTER-->
-    <!--Scripts Register GUI Connection-->
+        <!--REGISTER-->
+        <!--Scripts Register GUI Connection-->
     <script src="register/RegisterBrowser.lua" type="client"></script>
     <script src="register/RegisterBackend.lua" type="server"></script>
-    <!--Import of HTML, CSS, and JS Files-->
+        <!--Import of HTML, CSS, and JS Files-->
     <file src="register/src/register.html"></file>
-    <!--CSS-->
+        <!--CSS-->
     <file src="register/src/css/Body.css"></file>
     <file src="register/src/css/Form.css"></file>
     <file src="register/src/css/Input.css"></file>
     <file src="register/src/css/Button.css"></file>
     <file src="register/src/css/Tooltip.css"></file>
-    <!--JS-->
+        <!--JS-->
     <file src="register/src/js/Button.js"></file>
     <file src="register/src/js/Validate.js"></file>
-    <!--Import of respective files Fonts - CSS-->
+        <!--Import of respective files Fonts - CSS-->
     <file src="register/src/css/Titillium-Web.css"></file>
     <file src="register/src/fonts/TitilliumWeb-Bold.ttf"></file>
-    <!--Essential Images-->
+        <!--Essential Images-->
     <file src="register/src/images/Background.png"></file>
     <file src="register/src/images/Logo_Montgomery.png"></file>
-    <!--END REGISTER-->
+        <!--END REGISTER-->
 
-    <!--BASE-->
-    <!--Scripts Base GUI Connection-->
+        <!--BASE-->
+        <!--Scripts Base GUI Connection-->
     <script src="base/BaseCamera.lua" type="client"></script>
     <script src="base/BaseBackend.lua" type="server"></script>
-    <!--END BASE-->
+        <!--END BASE-->
 
-    <!--Request te funciones importantes logIn y addAccount-->
+        <!--Functions requests LogIn y addAccount--> 
     <aclrequest>
         <right name="function.logIn" acces="true"></right>
         <right name="function.addAccount" acces="true"></right>
     </aclrequest>
-    <!--PRIORITY-->
-    
+    <!--PRIORITY--> 
 </meta>

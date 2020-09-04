@@ -80,6 +80,6 @@ event.add("register-browser:show", root,
 event.load("register-tooltip-browser:show", true)
 event.add("register-tooltip-browser:show", root,
           function(message, type_tooltip)
-    register_tooltip_error_send = exports["[tooltip]"]:showTooltip(message,
+    register_tooltip_error_send = exports["[tooltip]"]:showBrowserTooltipGUI(message,
                                                                    type_tooltip)
 end, true)

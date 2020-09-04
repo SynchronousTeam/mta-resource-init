@@ -67,7 +67,7 @@ end) -- An Event that Remove the Browser GUI
 
 event.load("login-tooltip-browser:show", true)
 event.add("login-tooltip-browser:show", root, function(message, type_tooltip)
-    login_tooltip_error_send = exports["[tooltip]"]:showTooltip(message,
+    login_tooltip_error_send = exports["[tooltip]"]:showBrowserTooltipGUI(message,
                                                                 type_tooltip)
 end) -- An event that get a parameter and show it in a Independent Browser GUI like an Error
 
